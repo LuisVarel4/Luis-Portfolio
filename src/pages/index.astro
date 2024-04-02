@@ -1,0 +1,66 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import CertificadoIcon from "../components/icons/Certificado.astro";
+import SocialPill from "../components/SocialPill.astro";
+import GithubIcon from "../components/icons/Github.astro";
+import MailIcon from "../components/icons/Mail.astro";
+import TimeLine from "../components/TimeLine.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+---
+
+<Layout
+  title="Portfolio | Luis Varela Frontend Developer"
+  ,
+  description="Estudiante de 6to semestre de la Universidad Nacional de Colombia en Ingeniería de Sistemas e Informática"
+>
+  <main class="px-4">
+    <SectionContainer id="about" class="py-44 pb-24">
+      <img
+        class="rounded-full w-14 h-14 mb-4"
+        src="src/img/FotoCarnetLuisGrande.jpg"
+        alt="Foto Luis"
+      />
+      <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+        Hey, Soy Luis
+        <a
+          href="https://www.linkedin.com/in/luisvare-la/"
+          target="_blank"
+          rel="noopener"
+        >
+          <Badge>Denme chamba porfa</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl lg:text-2xl opacity-80 text-wrap max-w-[700px]">
+        Aqui va una descripcion bien cool sobre Luis
+      </h2>
+
+      <nav class="flex gap-4 mt-6 flex-wrap">
+        <SocialPill href="https://www.linkedin.com/in/luisvare-la/">
+          <LinkedInIcon class="size-4 md:size-6" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/LuisVarel4">
+          <GithubIcon class="size-4 md:size-6" />
+          Github
+        </SocialPill>
+        <SocialPill href="https://github.com/LuisVarel4">
+          <MailIcon class="size-4 md:size-6" />
+          Luisvarela2002@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="Education">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-2 items-center">
+        <CertificadoIcon class="size-7" />
+        Educación
+      </h2>
+      <TimeLine/>
+    </SectionContainer>
+    <SectionContainer>
+      
+    </SectionContainer> 
+  </main>
+</Layout>
